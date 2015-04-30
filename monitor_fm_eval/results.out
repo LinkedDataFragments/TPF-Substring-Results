@@ -1,0 +1,13 @@
+START 1430378365246
+fragment keyword results first_time total_time
+http://localhost:3000/dbpedia2014 photographic_camera 8 65 67
+http://localhost:3000/dbpedia2014 digital_camera 747 102 660
+http://localhost:3000/dbpedia2014 laptop 1280 164 1552
+http://localhost:3000/dbpedia2014 tools 6795 116 6900
+http://localhost:3000/dbpedia2014 photography 7030 123 6802
+http://localhost:3000/dbpedia2014 landing 10211 66 8302
+http://localhost:3000/dbpedia2014 computer 53316 88 47817
+http://localhost:3000/dbpedia2014 politician 139952 42 100052
+http://localhost:3000/dbpedia2014 sun 154439 223 111451
+http://localhost:3000/dbpedia2014 car 965159 174 785423
+DONE 1430379434312
