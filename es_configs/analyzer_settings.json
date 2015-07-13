@@ -1,0 +1,49 @@
+{
+   "analysis": {
+         "filter": {
+            "nGram_filter": {
+               "type": "edgeNGram",
+               "min_gram": 2,
+               "max_gram": 32,
+               "token_chars": [
+                  "letter",
+                  "digit",
+                  "punctuation",
+                  "symbol"
+               ]
+            },
+            "shingle_filter": {
+               "type": "shingle"
+            }
+         },
+         "analyzer": {
+            "shingle_analyzer": {
+               "type": "custom",
+               "tokenizer": "whitespace",
+               "filter": [
+                  "lowercase",
+                  "asciifolding",
+                  "shingle_filter"
+               ]
+            },
+            "nGram_analyzer": {
+               "type": "custom",
+               "tokenizer": "whitespace",
+               "filter": [
+                  "lowercase",
+                  "asciifolding",
+                  "shingle_filter",
+                  "nGram_filter"
+               ]
+            },
+            "search_analyzer": {
+               "type": "custom",
+               "tokenizer": "whitespace",
+               "filter": [
+                  "lowercase",
+                  "asciifolding"
+               ]
+            }
+         }
+      }
+}
